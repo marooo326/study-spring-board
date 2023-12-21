@@ -18,7 +18,7 @@ import java.util.List;
 public class AdminController {
 
     private final AdminService adminService;
-    
+
     @GetMapping("/users")
     public ResponseEntity<ApiResponse<List<UserDetailResponse>>> getUsers(@RequestParam(required = false) List<Long> userIds) {
         return ResponseEntity.ok(ApiResponse.success(adminService.getUsers(userIds)));
@@ -34,7 +34,7 @@ public class AdminController {
         return ResponseEntity.ok(ApiResponse.success(adminService.deleteUsers(userIds)));
     }
 
-    @GetMapping("/posts/users/{userId})")
+    @GetMapping("/posts/users/{userId}")
     public ResponseEntity<ApiResponse<List<PostResponse>>> getPostsFromUser(@PathVariable Long userId) {
         return ResponseEntity.ok(ApiResponse.success(adminService.getPosts(userId)));
     }
