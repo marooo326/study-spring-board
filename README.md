@@ -1,6 +1,6 @@
 # Board API Server
 
-Spring data Jpa를 이용한 게시판 API 서버
+공부한 기술들을 적용해보는 게시판 API 서버입니다.
 
 ## Stacks
 
