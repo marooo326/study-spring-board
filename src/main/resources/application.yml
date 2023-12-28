@@ -7,7 +7,7 @@ server:
 
 spring:
   profiles:
-    default: prod
+    default: dev
 
   data:
     redis:
